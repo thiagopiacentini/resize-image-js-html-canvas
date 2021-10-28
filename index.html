@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resize image whith javaScript</title>
+  <link rel="stylesheet" href="src/main.css">
+  <script src="src/main.js" defer></script>
+</head>
+<body>
+  
+  <div class="resizer">
+    <input type="file" class="resizer__file">
+    <div class="dimensions">
+      <div class="dimensions__content">
+        <div class="dimensions__item">
+          <label for="largura">Largura</label>
+          <input type="text" id="largura" class="resizer__input resizer__input--width" value="0">
+        </div>
+        <span class="">x</span>
+        <div class="dimensions__item">
+          <label for="altura">Altura</label>
+          <input type="text" id="altura" class="resizer__input resizer__input--height" value="0">
+        </div>
+      </div>
+      <label for="proportion">
+        <input type="checkbox" class="resizer__aspect" id="proportion" checked>
+        Manter a proporção
+      </label>
+    </div>
+    <canvas class="resizer__canvas" width="500" height="500"></canvas>
+  </div>
+  
+</body>
+</html>

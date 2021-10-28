@@ -1,0 +1,44 @@
+.resizer {
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 20px;
+  width: 500px;
+}
+
+.dimensions {
+  padding: 20px 0;
+}
+
+.dimensions__content {
+  display: flex;
+}
+
+.dimensions__item{
+  display: flex;
+  flex-direction: column;
+}
+
+.dimensions span {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 7px;
+  font-size: 18px;
+}
+
+.resizer__input {
+  width: 5rem;
+  padding: 5px;
+  margin: 5px 0;
+  border: solid 2px #999;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.resizer__input:hover, .resizer__input:focus {
+  border: solid 2px #333;
+  background-color: #ddd;
+}
+
+.resizer__canvas {
+  max-width: 100%;
+}
